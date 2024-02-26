@@ -1,0 +1,201 @@
+---
+swagger: "2.0"
+info:
+  description: "NI Orchestration Module for the NI project."
+  version: "1.0.0"
+  title: "NI Orchestration"
+tags:
+- name: "ni_orchestration_module"
+  description: "Orchestration module for NI-MANO."
+schemes:
+- "https"
+- "http"
+paths:
+  /get_status:
+    post:
+      tags:
+      - "Orchestration APIs"
+      summary: "get_status"
+      operationId: "get_status"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "Success."
+          schema:
+            type: "string"
+      x-swagger-router-controller: "server.controllers.default_controller"
+  /common_activating:
+    post:
+      tags:
+      - "Orchestration APIs"
+      summary: "common_activating"
+      operationId: "common_activating"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "Success."
+          schema:
+            type: "string"
+      x-swagger-router-controller: "server.controllers.default_controller"
+  /all_deactivating:
+    post:
+      tags:
+      - "Orchestration APIs"
+      summary: "all_deactivating"
+      operationId: "all_deactivating"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "Success."
+          schema:
+            type: "string"
+      x-swagger-router-controller: "server.controllers.default_controller"
+  /auto_deployment_on:
+    post:
+      tags:
+      - "Orchestration APIs"
+      summary: "auto_deployment_on"
+      operationId: "auto_deployment_on"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "Success."
+          schema:
+            type: "string"
+      x-swagger-router-controller: "server.controllers.default_controller"
+  /auto_deployment_off:
+    post:
+      tags:
+      - "Orchestration APIs"
+      summary: "auto_deployment_off"
+      operationId: "auto_deployment_off"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "Success."
+          schema:
+            type: "string"
+      x-swagger-router-controller: "server.controllers.default_controller"
+  /auto_migration_on:
+    post:
+      tags:
+      - "Orchestration APIs"
+      summary: "auto_migration_on"
+      operationId: "auto_migration_on"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "Success."
+          schema:
+            type: "string"
+      x-swagger-router-controller: "server.controllers.default_controller"
+  /auto_migration_off:
+    post:
+      tags:
+      - "Orchestration APIs"
+      summary: "auto_migration_off"
+      operationId: "auto_migration_off"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "Success."
+          schema:
+            type: "string"
+      x-swagger-router-controller: "server.controllers.default_controller"
+  /auto_scaling_on:
+    post:
+      tags:
+      - "Orchestration APIs"
+      summary: "auto_scaling_on"
+      operationId: "auto_scaling_on"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "Success."
+          schema:
+            type: "string"
+      x-swagger-router-controller: "server.controllers.default_controller"
+  /auto_scaling_off:
+    post:
+      tags:
+      - "Orchestration APIs"
+      summary: "auto_scaling_off"
+      operationId: "auto_scaling_off"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "Success."
+          schema:
+            type: "string"
+      x-swagger-router-controller: "server.controllers.default_controller"
+  /auto_consolidation_on:
+    post:
+      tags:
+      - "Orchestration APIs"
+      summary: "auto_consolidation_on"
+      operationId: "auto_consolidation_on"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "Success."
+          schema:
+            type: "string"
+      x-swagger-router-controller: "server.controllers.default_controller"
+  /auto_consolidation_off:
+    post:
+      tags:
+      - "Orchestration APIs"
+      summary: "auto_consolidation_off"
+      operationId: "auto_consolidation_off"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "Success."
+          schema:
+            type: "string"
+      x-swagger-router-controller: "server.controllers.default_controller"
+  /simulated_anomaly:
+    post:
+      tags:
+      - "Orchestration APIs"
+      summary: "simulated_anomaly"
+      operationId: "simulated_anomaly"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "vnf_id"
+        in: "query"
+        description: "The id of target vnf"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "Success."
+          schema:
+            type: "string"
+      x-swagger-router-controller: "server.controllers.default_controller"
+externalDocs:
+  description: "Find out more about DPNM NI."
+  url: "http://dpnm.postech.ac.kr/"
